@@ -1,0 +1,20 @@
+.lama {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 50%;
+    margin-bottom: 33%;
+}
+
+.backLama{
+    background-image: url(../../assets/img/background_lama_f.svg);
+    height: 471px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 18%;
+}

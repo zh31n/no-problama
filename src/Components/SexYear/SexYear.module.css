@@ -1,0 +1,88 @@
+.lama {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 30%;
+    margin-bottom: 10%;
+}
+
+.backLama {
+    background-image: url(../../assets/img/sex_year_back.svg);
+    background-repeat: no-repeat;
+    height: 638px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 33%;
+}
+
+.login_btn {
+    width: 128px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 15px;
+    font-size: 32px;
+    margin-bottom: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10rem;
+}
+
+.create_btn {
+    width: 195px;
+    height: 48px;
+    background: #8F76F5;
+    border-radius: 15px;
+    color: #FFF;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
+
+.inputs_login {
+    margin-top: 2rem;
+}
+
+.login_btns {
+    width: 292px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.title_sex {
+    font-size: 24px;
+    margin-bottom: 2rem;
+}
+
+.sex_btns {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.sex_btn {
+    width: 137px;
+    height: 39px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-size: 20px;
+}
+
+.sex_btn.active{
+    background-color: #8F76F5;
+}

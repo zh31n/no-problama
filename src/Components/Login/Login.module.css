@@ -1,0 +1,57 @@
+.lama {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 30%;
+    margin-bottom: 10%;
+}
+
+.backLama {
+    background-image: url(../../assets/img/CreateAcc_back.svg);
+    background-repeat: no-repeat;
+    height: 638px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 45%;
+}
+
+.login_btn {
+    width: 128px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 15px;
+    font-size: 32px;
+    margin-bottom: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10rem;
+}
+
+.create_btn {
+    width: 195px;
+    height: 48px;
+    background: #FFFF4D;
+    border-radius: 15px;
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
+
+.login_btns {
+    width: 292px;
+    margin-right: auto;
+    margin-left: auto;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}

@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import CreateAcc from './Components/CreateAcc/CreateAcc';
+import Helper from './Components/Helper/Helper';
+import Lama from './Components/Lama/Lama';
+import Login from './Components/Login/Login';
+import LoginPage from './Components/LoginPage/LoginPage';
+import PageLogo from './Components/PageLogo/PageLogo';
+import SexYear from './Components/SexYear/SexYear';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path='/' element={<PageLogo />} />
+        <Route path='/lama' element={<Lama />} />
+        <Route path='/loginPage' element={<LoginPage />} />
+        <Route path='/createAcc' element={<CreateAcc />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/option' element={<SexYear />} />
+        <Route path='/helper' element={<Helper />} />
+      </Routes>
     </div>
   );
 }

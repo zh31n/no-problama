@@ -1,0 +1,49 @@
+.lama {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 50%;
+    margin-bottom: 17%;
+}
+
+.backLama {
+    background-image: url(../../assets/img/Login_back.svg);
+    background-repeat: no-repeat;
+    height: 471px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 18%;
+}
+
+.login_btn {
+    width: 128px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 15px;
+    font-size: 32px;
+    margin-bottom: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10rem;
+}
+
+.create_btn {
+    width: 306px;
+    height: 48px;
+    background: #FFFF4D;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    text-decoration: none;
+    color: black;
+}
