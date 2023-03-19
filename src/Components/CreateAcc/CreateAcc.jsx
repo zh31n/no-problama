@@ -1,7 +1,7 @@
 import s from './CreateAcc.module.css'
 import logo from '../../assets/img/Logo.svg'
 import { Link } from 'react-router-dom'
-import Input from '../../Input/Input'
+import Input from '../Input/Input'
 
 
 

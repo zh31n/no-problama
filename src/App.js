@@ -6,6 +6,7 @@ import Lama from './Components/Lama/Lama';
 import Login from './Components/Login/Login';
 import LoginPage from './Components/LoginPage/LoginPage';
 import PageLogo from './Components/PageLogo/PageLogo';
+import ProfileContainer from './Components/ProfileContainer/ProfileContainer';
 import SexYear from './Components/SexYear/SexYear';
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
         <Route path='/login' element={<Login />} />
         <Route path='/option' element={<SexYear />} />
         <Route path='/helper' element={<Helper />} />
+        <Route path='/profile/*' element={<ProfileContainer />} />
       </Routes>
     </div>
   );
