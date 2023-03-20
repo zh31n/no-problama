@@ -5,12 +5,14 @@ import lama_ava from '../../assets/img/lama_ava.svg'
 import msg_wh from '../../assets/img/msg_wh.svg'
 import msg_yel from '../../assets/img/msg_yel.svg'
 import ava_guy from '../../assets/img/ava_guy.svg'
+import Termin from '../Modals/Termin/Termin';
 
 
 const Dialog = () => {
     return (
         <div className="">
             <HeaderDialogs />
+            <Termin />
             <div className={s.messages}>
                 <div className={s.messages_i}>
                     <div className={s.message}>

@@ -1,4 +1,5 @@
 .messages {
+    padding-top: 6.2rem;
     height: 595px;
     width: 100%;
     color: white;
@@ -61,6 +62,7 @@ textarea {
 .message_item img {
     position: relative;
     left: 5px;
+    z-index: 1 !important;
 }
 
 .message_item_i {
