@@ -49,7 +49,8 @@ h1 {
     position: relative;
     bottom: 90px;
     left: 40px;
-    display: none;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .u_name::after {
@@ -59,7 +60,8 @@ h1 {
     position: relative;
     top: 5px;
     left: 5px;
-    display: none;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .u_email::after {
@@ -69,7 +71,8 @@ h1 {
     position: relative;
     top: 5px;
     left: 5px;
-    display: none;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .u_name {
@@ -87,9 +90,11 @@ h1 {
     font-size: 14px;
     font-weight: 400;
 }
-*{
-    transition: all .3s;
+
+* {
+    transition: all 1s;
 }
+
 .u_stats {
     width: 75%;
     margin-right: auto;
@@ -191,7 +196,7 @@ h1 {
     bottom: 90px;
 }
 
-.settings_profile{
+.settings_profile {
     display: none;
 }
 
@@ -295,38 +300,30 @@ h1 {
     cursor: pointer;
 }
 
-.btn_s:last-child{
+.btn_s:last-child {
     background-color: #282828;
     color: white;
 }
 
-.profile_sett.active .set_age::after{
+.profile_sett.active .set_age::after,
+.profile_sett.active .u_img::after,
+.profile_sett.active .u_name::after,
+.profile_sett.active .u_email::after,
+.profile_sett.active .sett_sex::after {
     display: inline;
-}
-
-.profile_sett.active .u_img::after{
-    display: inline;
-}
-
-.profile_sett.active .u_name::after{
-    display: inline;
-}
-
-.profile_sett.active .u_email::after{
-    display: inline;
-}
-
-.profile_sett.active .sett_sex::after{
-    display: inline;
+    opacity: 1;
+    pointer-events: all;
 }
 
 
-
-.profile_sett.active .settings_profile{
+.profile_sett.active .settings_profile {
     display: block;
 }
 
-.profile_sett.active .u_stats{
+.profile_sett.active .u_stats {
     transform: scale(0.7);
 }
 
+.profile_sett.active .btnShest {
+    transform: rotate(320deg);
+}

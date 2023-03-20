@@ -5,17 +5,21 @@ import complete from '../../assets/img/complete.svg';
 import quest from '../../assets/img/quest.svg';
 import fire from '../../assets/img/fire.svg';
 import arrow_left from '../../assets/img/arrow_left_main.svg'
+import CloseModules from '../Modals/CloseModules/CloseModules';
+import CloseTitle from '../Modals/CloseTitle/CloseTitle';
 
-const Profile = () => {
+const Profile = (props) => {
     return (
         <div className="">
+            <CloseModules />
+            <CloseTitle />
             <div className={`${s.profile_sett} `}>
                 {/* ${s.active} дописываешь в скобки и появляеться выпадашка */}
                 <div className={s.profile_i}>
                     <div className={s.up_line}>
                         <h1>Профиль</h1>
                         <h1 className={s.title_sett}>Настройки</h1>
-                        <img src={btnShest} alt="" />
+                        <img className={s.btnShest} src={btnShest} alt="" />
                     </div>
                     <div className={s.u_info}>
                         <div className={s.u_img}>
