@@ -4,6 +4,14 @@
     background: #FCFCFA;
     border-radius: 0px 0px 50px 50px;
     overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.profile_sett.active {
+    height: calc(100vh - 87px);
+    border-radius: 0;
+    position: fixed;
+    z-index: 10;
 }
 
 
@@ -34,10 +42,44 @@ h1 {
     margin-top: 2rem;
 }
 
+
+
+.u_img::after {
+    content: url(../../assets/img/pencil.svg);
+    position: relative;
+    bottom: 90px;
+    left: 40px;
+    display: none;
+}
+
+.u_name::after {
+    content: url(../../assets/img/pencil.svg);
+    height: 21px;
+    width: 21px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    display: none;
+}
+
+.u_email::after {
+    content: url(../../assets/img/pencil.svg);
+    height: 21px;
+    width: 21px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    display: none;
+}
+
 .u_name {
     font-size: 24px;
     font-weight: 400;
     margin-top: 1rem;
+}
+
+.title_sett {
+    display: none;
 }
 
 .u_email {
@@ -45,7 +87,9 @@ h1 {
     font-size: 14px;
     font-weight: 400;
 }
-
+*{
+    transition: all .3s;
+}
 .u_stats {
     width: 75%;
     margin-right: auto;
@@ -53,6 +97,8 @@ h1 {
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
+    transform: scale(1);
+    transition: all .3s;
 }
 
 .count {
@@ -68,6 +114,7 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 2rem;
 }
 
 .title {
@@ -79,7 +126,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
 }
 
 .module {
@@ -91,26 +138,26 @@ h1 {
     background-repeat: no-repeat;
 }
 
-.module:last-child{
+.module:last-child {
     background-image: url(../../assets/img/purple_back.svg);
     background-color: #8F76F5;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.module .count{
+.module .count {
     margin-top: 1.5rem;
     margin-left: 1.5rem;
     font-size: 48px;
 }
 
-.module_title{
+.module_title {
     margin-left: 1.5rem;
     font-size: 14px;
     text-align: left;
 }
 
-.module_sup{
+.module_sup {
     font-size: 20px;
     margin-top: 3.5rem;
     margin-left: 1.5rem;
@@ -118,10 +165,168 @@ h1 {
     margin-bottom: .5rem;
 }
 
-.module img{
+.module img {
     margin-left: 1.5rem;
 }
 
-.module:last-child .module_sup{
+.module:last-child .module_sup {
     margin-top: 35px;
 }
+
+.sett_sex {
+    width: 280px;
+    height: 87px;
+    background: #F2F2F0;
+    border: 1px solid #D5D5D5;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1rem;
+}
+
+.sett_sex::after {
+    content: url(../../assets/img/pencil.svg);
+    position: relative;
+    left: 265px;
+    bottom: 90px;
+}
+
+.settings_profile{
+    display: none;
+}
+
+
+
+.sex_title {
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: .5rem;
+    margin-top: 0.25rem;
+    margin-bottom: .5rem;
+}
+
+.sex_btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.sex_btn {
+    width: 125px;
+    height: 39px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.sex_btn.active {
+    background-color: #8F76F5;
+}
+
+.set_age {
+    width: 280px;
+    height: 35px;
+    background: #F2F2F0;
+    border: 1px solid #D5D5D5;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1rem;
+}
+
+.set_age input {
+    font-family: 'SA Long Beach' !important;
+    font-size: 20px;
+    background: 0;
+    outline: 0;
+    border: 0;
+    width: 55%;
+    padding-left: 5px;
+}
+
+.set_age input::placeholder {
+    color: black;
+}
+
+.set_age::after {
+    content: url(../../assets/img/pencil.svg);
+    position: relative;
+    left: 17px;
+    bottom: 15px;
+    display: none;
+}
+
+.set_age.pass::after {
+    left: 20px;
+}
+
+
+
+.btns_save {
+    margin-top: 4rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 72.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn_s {
+    width: 126px;
+    height: 36px;
+    border: 1px solid #282828;
+    border-radius: 15px;
+    color: #282828;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn_s:last-child{
+    background-color: #282828;
+    color: white;
+}
+
+.profile_sett.active .set_age::after{
+    display: inline;
+}
+
+.profile_sett.active .u_img::after{
+    display: inline;
+}
+
+.profile_sett.active .u_name::after{
+    display: inline;
+}
+
+.profile_sett.active .u_email::after{
+    display: inline;
+}
+
+.profile_sett.active .sett_sex::after{
+    display: inline;
+}
+
+
+
+.profile_sett.active .settings_profile{
+    display: block;
+}
+
+.profile_sett.active .u_stats{
+    transform: scale(0.7);
+}
+
