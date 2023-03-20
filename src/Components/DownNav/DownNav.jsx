@@ -8,7 +8,7 @@ const DownNav = () => {
     return (
         <div className={s.nav}>
             <div className={s.nav_imgs}>
-                <NavLink to={'/profile/tasks'}>
+                <NavLink to={'/profile/tasks/main'}>
                     <img src={tasks} alt="" />
                 </NavLink>
                 <NavLink to={'/profile/dialog'}>

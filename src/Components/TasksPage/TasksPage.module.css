@@ -1,0 +1,58 @@
+.tasks_items {
+    height: 650px;
+    padding-top: 7rem;
+    padding-bottom: 1rem;
+    overflow: auto;
+    border: 1px white solid;
+}
+
+.tasks_item {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    color: black !important;
+    text-decoration: none !important; 
+}
+
+.t_num {
+    width: 38px;
+    height: 38px;
+    background: #FFFF99;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.t_title {
+    width: 279px;
+    min-height: 28px;
+    /* height: 38px; */
+    background: #FFFF99;
+    border-radius: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    word-wrap: break-word;
+    
+}
+
+.t_title div {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.tasks_item.skip .t_title,
+.tasks_item.skip .t_num {
+    background: #B19FF5;
+}
+
+.tasks_item.unk .t_title,
+.tasks_item.unk .t_num {
+    background: #262626;
+}
